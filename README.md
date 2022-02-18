@@ -22,11 +22,13 @@ user@user-virtual-machine:~$ whereis bash
 bash: /usr/bin/bash /etc/bash.bashrc /usr/share/man/man1/bash.1.gz
 ```
 
+-----
 
 1-1-4 請試說明 type 指令以何方式判別為內或外部指令。
 
 >用是否使用執行檔判斷，通常在bin底下。
 
+-----
 
 1-1-10 請說明五個於 env中的環境變數以及用途。
 
@@ -37,13 +39,14 @@ LOGNAME：指當前使用者的登入名
 HOME：指定使用者的主工作目錄（即使用者登陸到Linux系統中時，預設的目錄）
 PATH：指定命令的搜尋路徑
 
+-----
 
 1-2-5 請說明 Shell Script 第一行 ( #!/bin/bash ) 意義與辨識方式。
 
 >
 第一行的 `#!` 是對指令碼的直譯器程式路徑
 
-
+-----
 
 1-2-10 請試說明並舉例其它課堂未說明之 EXIT Code。
 
@@ -60,7 +63,7 @@ PATH：指定命令的搜尋路徑
 | 130 | Script terminated by Control-C | _Ctl-C_ | Control-C is fatal error signal 2, (130 = 128 + 2, see above) |
 | 255\* | Exit status out of range | exit \-1 | **exit** takes only integer args in the range 0 - 255 |
 
-
+-----
 
 1-2-14 請說明管線「 |  」功能並舉例。
 
@@ -70,7 +73,7 @@ PATH：指定命令的搜尋路徑
 ```
 所以 `command2` 會處理 `command1` 所傳進來的資料，而 `command3` 會再處理 `command2` 傳進來的資料，以此類推。
 
-
+-----
 
 2-1-12、2-1-13、2-1-14、2-1-15、2-1-16
 
@@ -156,7 +159,7 @@ user@user-virtual-machine:~$ bash printPic.sh 2-1-16 9
 
 ```
 
-
+-----
 
 2-2-3 舉三個例子使用 %* 或 %%* 於系統中的應用，並說明之。
 
@@ -165,7 +168,7 @@ user@user-virtual-machine:~$ bash printPic.sh 2-1-16 9
 2.檔案路徑
 3.分析居住位置
 
-
+-----
 
 2-2-7 使用 shell 的呼叫並傳遞身高、體重參數計算身體質量指數 ( BMI ) 評估程式。
 
@@ -195,6 +198,7 @@ BMI 21.48
 
 ```
 
+-----
 
 2-2-8 使用 shell 的呼叫並傳遞參數設計男、女鞋碼對照程式 ( JP、US、UK、TW、KR、CN )。
 
@@ -226,6 +230,8 @@ user@user-virtual-machine:~$ bash SH1003.sh f eu 40
 
 ```
 
+-----
+
 3-1-1 請修改 while2nl.sh，輸入檔名時可以檢查當案是  否存在，不存時在應輸出錯誤提示並停止執行。
 
 [while2nl_fix.sh](./assets/while2nl_fix.sh)
@@ -255,6 +261,7 @@ Please enter File-Name:345
 345 file not found
 ```
 
+-----
 
 3-1-2 請以 while 與 for 寫印出一個九九成法表。
 
@@ -299,6 +306,7 @@ user@user-virtual-machine:~$ bash SH1004.sh
 [retcode=0]
 ```
 
+-----
 
 3-1-14 請寫一身分證字號驗證程式 (驗證英文、性別與檢查碼，需使用 function, 傳值, return)。
 
@@ -341,8 +349,7 @@ user@user-virtual-machine:~$ bash SH1005.sh K233265200
 
 ```
 
-
-
+-----
 
 3-2-13 請舉三個指令可以列出系統資源的指令並說明。
 
@@ -351,6 +358,8 @@ user@user-virtual-machine:~$ bash SH1005.sh K233265200
 `free` : 查詢記憶體的使用
 `df` : 查詢硬碟的使用
 
+-----
+
 3-2-15 請舉三個指令可以處理文字檔案的指令並說明。
 
 >
@@ -358,7 +367,7 @@ user@user-virtual-machine:~$ bash SH1005.sh K233265200
 `cut` : 按列切分文字
 `sed` : 文字替換
 
-
+-----
 
 3-2-16 請舉三個指令可以詢問網路資源的指令並說明。
 >
@@ -366,8 +375,7 @@ user@user-virtual-machine:~$ bash SH1005.sh K233265200
 `route` : 顯示 / 修改路由表
 `nslookup` : 查詢主機名稱與ip對應
 
-
-
+-----
 
 **online**
 ---
